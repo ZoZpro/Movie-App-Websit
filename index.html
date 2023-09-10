@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie App</title>
+</head>
+
+<body>
+
+    <div id="back-to-top">
+        <a href="#">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </a>
+    </div>
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+
+    <section id="side-bar" class="">
+        <div class="side-nav-menu bg-black  min-vh-100  d-flex top-0">
+            <div class="nav-tab  text-white d-flex flex-column justify-content-between min-vh-100 p-4">
+                <div class="links animate__animated  ">
+                    <ul class="list-unstyled overflow-hidden text-white">
+                        <li class="py-2 position-relative now-playing">Now Playing</li>
+                        <li class="py-2 position-relative popular">Popular</li>
+                        <li class="py-2 position-relative top-rated">Top Rated</li>
+                        <li class="py-2 position-relative trending"> Trending</li>
+                        <li class="py-2 position-relative upcoming">Upcoming </li>
+                        <li class="py-2 position-relative contact">Contact </li>
+                    </ul>
+                </div>
+                <div class="nav-footer ">
+                    <div class="icons ">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-header d-flex flex-column justify-content-between py-4 bg-white text-black">
+                <img class="logo w-50 mx-auto" src="images/logo.png" alt="" srcset="">
+                <img src="images/FontAwesome-Bars-icon.png" class=" w-50 open-nav mx-auto" alt="">
+                <img src="images/Remove_font_awesome.svg.png" class=" w-50 mx-auto close-nav d-none" alt="">
+                <div class="mx-auto">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes d-block"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- =============== Hero ssection ================= -->
+    <section id="hero" class="container py-5">
+        <input id="search" type="search" placeholder="Search"
+            class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+        <div class="row g-4 mt-3 text-white" id="movie">
+
+        </div>
+        </div>
+    </section>
+    <!-- ================Contact Section =====================-->
+    <section id="contact" class="container text-white py-5">
+        <h2>Contact US</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name"
+                        required>
+                    <span id="nameError" class="animate__animated animate__fadeInDown"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="email" class="form-control mt-4" placeholder="Enter Your Email" required>
+                    <span id="emailError" class="animate__animated animate__fadeInDown"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="phone" class="form-control mt-4" placeholder="Enter Your Phone" required>
+                    <span id="phoneError " class="animate__animated animate__fadeInDown"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="age" class="form-control mt-4" placeholder="Enter Your Age" required>
+                    <span id="ageError " class="animate__animated animate__fadeInDown"></span>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" id="password" class="form-control mt-4" placeholder="Enter Your Password"
+                        required>
+                    <span id="passwordError " class="animate__animated animate__fadeInDown"></span>
+                    <span class="showPass"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="repassword" class="form-control mt-4" placeholder="ReEnter Password"
+                        required>
+                    <span id="repasswordError " class="animate__animated animate__fadeInDown"></span>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit"
+                        class="form-btn rounded-2 mb-3 animate__animated animate__fadeInDown">Submit</button>
+                </div>
+        </form>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
