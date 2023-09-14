@@ -226,7 +226,7 @@ function validateEmail() {
 function validatePhone() {
     let phone = document.getElementById("phone").value;
     let phoneError = document.getElementById("phoneError");
-    let phoneRegex=/^\d{10}$/;
+    let phoneRegex=/^01[0125][0-9]{8}$/;
 
     if (phoneRegex.test(phone)) {
         phoneError.innerHTML = "correct";
@@ -240,13 +240,13 @@ function validatePhone() {
 function validateAge() {
     let age = document.getElementById("age").value;
     let ageError = document.getElementById("ageError");
-    let ageRegex=/^(1[7-9]|[2-9]\d)$/;
+    let ageRegex=/^(1[6-9]|[2-9]\d)$/;
 
     if (ageRegex.test(age)) {
         ageError.innerHTML = "correct";
         console.log('age');
     } else {
-        ageError.innerHTML = "You must be over 16+";
+        ageError.innerHTML = "You must be between 16 to 99 ";
     }
 }
 
